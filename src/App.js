@@ -25,18 +25,18 @@ function App() {
                 <Button className="button" onClick={onClickHandler} text={"YES"}/>
               </div> :
               <div className="interview">
-                <p>
+                <h2>
                   {interview?.level}
-                </p>
+                </h2>
                 <div>
-                  {interview?.groups?.map((group, key) => <span key={key}>
+                  {interview?.groups?.map((group, key) => <span key={key} className="group">
               <h3>{group?.name}</h3>
                         {group?.questions?.map(
-                            (question, key) => <p key={key}>{question}</p>)}
+                            (question, key) => <p key={key} className="question">{(key + 1) + '. ' + question}</p>)}
             </span>
                   )}
                 </div>
-                <Button className="button" onClick={onClickHandler} text={"AGAIN"}/>
+                <Button className="button again-button" onClick={onClickHandler} text={"AGAIN"}/>
               </div>}
         </div>
       </div>

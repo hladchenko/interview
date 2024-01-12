@@ -1,6 +1,8 @@
 body {
   background-color: black;
   color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
 }
 
 .App {
@@ -17,7 +19,7 @@ body {
 }
 
 .welcome {
-  font-size: 40px;
+
 }
 
 .button {
@@ -30,5 +32,13 @@ body {
 }
 
 .question {
+  text-align: left;
+}
 
+.group {
+  margin-top: 200px;
+}
+
+.again-button {
+  margin-top: 20px;
 }
