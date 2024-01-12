@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+  padding: 10px;
   width: 800px;
   display: flex;
   justify-content: center;
@@ -18,9 +19,18 @@ body {
   flex-direction: column;
 }
 
-.welcome {
-
+.title {
+  margin-bottom: 25px;
 }
+
+.description {
+  margin-top: 0;
+}
+
+.blue {
+  color: #61EFFF;
+}
+
 
 .button {
   width: 300px;
@@ -32,11 +42,8 @@ body {
 }
 
 .question {
+  color: white;
   text-align: left;
-}
-
-.group {
-  margin-top: 200px;
 }
 
 .again-button {
